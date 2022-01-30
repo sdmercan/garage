@@ -1,12 +1,27 @@
 package com.vodafone.garage.service;
 
-import org.springframework.http.*;
+import com.vodafone.garage.dto.*;
+import java.util.*;
+
 
 public interface IGarageManagementService {
+  /**
+   *
+   * @return
+   */
+  HashMap<String,String> findGarageStatus();
 
-  ResponseEntity<String> inquireGarageStatus(String asd);
+  /**
+   *
+   * @param vehicle
+   * @return
+   */
+  String parkNewVehicle(Vehicle vehicle);
 
-  ResponseEntity<String> parkNewVehicle(String asd);
-
-  ResponseEntity<String> leaveOneVehicle(String asd);
+  /**
+   *
+   * @param vehicleNumber
+   * @return
+   */
+  String leaveOneVehicle(Integer vehicleNumber);
 }
