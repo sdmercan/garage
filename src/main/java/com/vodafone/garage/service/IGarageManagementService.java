@@ -5,23 +5,21 @@ import java.util.*;
 
 
 public interface IGarageManagementService {
+
   /**
-   *
-   * @return
+   * @return hashmap include garage status
    */
   HashMap<String,String> findGarageStatus();
 
   /**
-   *
-   * @param vehicle
-   * @return
+   * @param vehicle for parking process
+   * @return allocated slot
    */
   String parkNewVehicle(Vehicle vehicle);
 
   /**
-   *
-   * @param vehicleNumber
-   * @return
+   * @param vehicleNumber for leave process
+   * @return string if doesnt find vehicle
    */
   String leaveOneVehicle(Integer vehicleNumber);
 }
