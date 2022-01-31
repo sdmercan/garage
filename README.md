@@ -16,6 +16,8 @@
 
 **Garage Vehicle Types**: CAR , JEEP, TRUCK (one of these types should be used as the **vehicleType** when parking a new car)
 
+**Postman Collection**: src/main/resources/collection/garage.postman_collection.json (You can use this collection for application.)
+
 #
 **ID:** 1
 

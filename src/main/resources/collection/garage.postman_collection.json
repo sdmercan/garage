@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "4b99feaf-7d33-4dd4-b181-bb43871c3d12",
+		"name": "garage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "parkReq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"color\": \"Black\",\r\n    \"plate\": \"30-SM-06\",\r\n    \"vehicleType\": \"CAR\" \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8282/garage/parkNewVehicle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"garage",
+						"parkNewVehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "statusReq",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/garage/findGarageStatus",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"garage",
+						"findGarageStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leaveReq",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8282/garage/leaveVehicle?vehicleNumber=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8282",
+					"path": [
+						"garage",
+						"leaveVehicle"
+					],
+					"query": [
+						{
+							"key": "vehicleNumber",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
